@@ -72,6 +72,10 @@ type NetworkInterfaceStatus struct {
 	// Gateway4 defines the gateway IPv4 address for the network this interface connects to.
 	Gateway4 *string `json:"gateway4,omitempty"`
 
+	// Gateway6 defines the gateway IPv6 address for the network this interface connects to.
+	// +optional
+	Gateway6 *string `json:"gateway6,omitempty"`
+
 	// Specifies the DNS configuration of the network this interface connects to.
 	// +optional
 	DNSConfig *DNSConfig `json:"dnsConfig,omitempty"`
